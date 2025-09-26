@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intelli-Hood DCKV System - Professional Presentation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="presentation-container">
+      <!-- Enhanced Navigation Header -->
+      <header class="presentation-header">
+        <div class="header-brand">
+          <img
+            src="klima_logo.png"
+            alt="Klima Global Logo"
+            class="brand-logo"
+          />
+          <!-- <span class="brand-text">Klima Global</span> -->
+        </div>
+        <div class="slide-indicator">
+          <span class="current-slide">1</span> /
+          <span class="total-slides">16</span>
+        </div>
+        <div class="nav-controls">
+          <button class="nav-btn" id="prevBtn" title="Previous Slide">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nav-btn" id="nextBtn" title="Next Slide">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <button class="nav-btn" id="fullscreenBtn" title="Fullscreen">
+            <i class="fas fa-expand"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Main Slides Container -->
+      <main class="slides-wrapper">
+        <!-- Slide 1: Title & Contact -->
+        <section class="slide active" data-slide="1">
+          <div class="slide-content hero-slide">
+            <div class="hero-content">
+              <div class="hero-logo">
+                <img src="klima_logo.png" alt="Klima Global Logo" />
+              </div>
+              <h1 class="hero-title">Intelli-Hood DCKV System</h1>
+              <h2 class="hero-subtitle">
+                Smart Kitchen Ventilation for Hospitality Excellence
+              </h2>
+              <div class="contact-card">
+                <div class="contact-header">
+                  <h3>Your DCKV Expert in MENA Region</h3>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-item">
+                    <i class="fas fa-user"></i>
+                    <div>
+                      <strong>Kamlesh Lodha</strong>
+                      <span>Managing Director</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+971 52 277 4852</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>Kamlesh@klimaglobal.com</span>
+                  </div>
+                  <div class="contact-item">
+                    <i class="fas fa-globe"></i>
+                    <span>www.klimaglobal.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 2: Company Introduction -->
+        <section class="slide" data-slide="2">
+          <div class="slide-content">
+            <h1 class="slide-title">Who is Klima Global?</h1>
+            <div class="company-intro">
+              <div class="company-overview">
+                <div class="company-logo-section">
+                  <img
+                    src="klima_logo.png"
+                    alt="Klima Global Logo"
+                    class="company-logo"
+                  />
+                </div>
+                <div class="company-description">
+                  <h2>Your Trusted DCKV Partner in the MENA Region</h2>
+                  <p class="lead-text">
+                    With 35+ years of industry expertise, Klima Global leads the
+                    Middle East in intelligent kitchen ventilation solutions,
+                    delivering exceptional energy savings and operational
+                    excellence to hospitality leaders.
+                  </p>
+                </div>
+              </div>
+              <div class="achievements-grid">
+                <div class="achievement-card primary">
+                  <div class="achievement-icon">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="achievement-number">179</div>
+                  <div class="achievement-label">
+                    Systems Installed<br />(2017-2024)
+                  </div>
+                </div>
+                <div class="achievement-card energy">
+                  <div class="achievement-icon">
+                    <i class="fas fa-bolt"></i>
+                  </div>
+                  <div class="achievement-number">18.8M</div>
+                  <div class="achievement-label">kWh Energy<br />Saved</div>
+                </div>
+                <div class="achievement-card environment">
+                  <div class="achievement-icon">
+                    <i class="fas fa-leaf"></i>
+                  </div>
+                  <div class="achievement-number">9.6M</div>
+                  <div class="achievement-label">kg CO₂<br />Reduced</div>
+                </div>
+                <div class="achievement-card trees">
+                  <div class="achievement-icon">
+                    <i class="fas fa-tree"></i>
+                  </div>
+                  <div class="achievement-number">441,581</div>
+                  <div class="achievement-label">Trees<br />Equivalent</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 3: Market Challenge -->
+        <section class="slide" data-slide="3">
+          <div class="slide-content">
+            <h1 class="slide-title challenge-title">
+              The Energy Crisis in Commercial Kitchens
+            </h1>
+            <div class="challenge-layout">
+              <div class="challenge-visual">
+                <div class="waste-comparison">
+                  <div class="system-demo waste">
+                    <h3>Traditional System</h3>
+                    <div class="system-diagram">
+                      <div class="airflow-bar full">
+                        <span>100% Exhaust</span>
+                        <div class="energy-indicator waste-indicator">
+                          HIGH ENERGY WASTE
+                        </div>
+                      </div>
+                      <div class="airflow-bar full">
+                        <span>100% Make-Up Air</span>
+                        <div class="cost-indicator">$$$</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vs-separator">
+                    <span>VS</span>
+                  </div>
+                  <div class="system-demo efficient">
+                    <h3>Intelli-Hood DCKV</h3>
+                    <div class="system-diagram">
+                      <div class="airflow-bar variable">
+                        <span>Variable Exhaust</span>
+                        <div class="energy-indicator efficient-indicator">
+                          ENERGY EFFICIENT
+                        </div>
+                      </div>
+                      <div class="airflow-bar variable">
+                        <span>Variable Make-Up Air</span>
+                        <div class="cost-indicator">$</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="challenge-stats">
+                <div class="stat-callout critical">
+                  <div class="stat-number">29%</div>
+                  <div class="stat-text">
+                    of F&B energy consumption<br />goes to HVAC systems
+                  </div>
+                </div>
+                <div class="stat-callout urgent">
+                  <div class="stat-number">75%</div>
+                  <div class="stat-text">
+                    of HVAC energy is consumed<br />by kitchen ventilation
+                  </div>
+                </div>
+                <div class="opportunity-highlight">
+                  <h3>The Opportunity</h3>
+                  <p>
+                    Up to <strong>97% energy savings</strong> possible with
+                    intelligent demand control
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 4: Market Opportunity -->
+        <section class="slide" data-slide="4">
+          <div class="slide-content">
+            <h1 class="slide-title">Massive Untapped Market Potential</h1>
+            <div class="market-opportunity">
+              <div class="global-stats">
+                <div class="stat-highlight installed">
+                  <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                  <div class="stat-content">
+                    <div class="stat-number">18,000+</div>
+                    <div class="stat-description">Global Systems Installed</div>
+                  </div>
+                </div>
+                <div class="stat-highlight penetration">
+                  <div class="stat-icon"><i class="fas fa-percentage"></i></div>
+                  <div class="stat-content">
+                    <div class="stat-number">&lt;1%</div>
+                    <div class="stat-description">Market Penetration</div>
+                  </div>
+                </div>
+                <div class="stat-highlight integrated">
+                  <div class="stat-icon">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <div class="stat-content">
+                    <div class="stat-number">80,000+</div>
+                    <div class="stat-description">
+                      Integrated Hoods Globally
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="market-visualization">
+                <div class="market-pie">
+                  <div class="pie-section captured">
+                    <div class="pie-label">
+                      <span class="percentage">&lt;1%</span>
+                      <span class="label">Market Captured</span>
+                    </div>
+                  </div>
+                  <div class="pie-section available">
+                    <div class="pie-label">
+                      <span class="percentage">99%+</span>
+                      <span class="label">Opportunity Available</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="opportunity-text">
+                  <h2>Enormous Growth Potential</h2>
+                  <p>
+                    With less than 1% market penetration, the opportunity for
+                    energy savings in commercial kitchens is virtually
+                    unlimited.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 5: Intelli-Hood Solution Overview -->
+        <section class="slide" data-slide="5">
+          <div class="slide-content">
+            <h1 class="slide-title">The Solution: Intelli-Hood DCKV</h1>
+            <div class="solution-showcase">
+              <div class="solution-pillars">
+                <div class="pillar simple">
+                  <div class="pillar-icon"><i class="fas fa-magic"></i></div>
+                  <h3>Simple</h3>
+                  <p>
+                    Easy installation with minimal kitchen disruption. Works
+                    with any hood manufacturer.
+                  </p>
+                  <ul>
+                    <li>Hood agnostic design</li>
+                    <li>Quick commissioning</li>
+                    <li>Intuitive operation</li>
+                  </ul>
+                </div>
+                <div class="pillar safe">
+                  <div class="pillar-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3>Safe</h3>
+                  <p>
+                    Fully compliant with safety standards and equipped with
+                    multiple safety features.
+                  </p>
+                  <ul>
+                    <li>NFPA 96 compliant</li>
+                    <li>ASHRAE 90.1 certified</li>
+                    <li>Emergency bypass</li>
+                  </ul>
+                </div>
+                <div class="pillar supported">
+                  <div class="pillar-icon"><i class="fas fa-headset"></i></div>
+                  <h3>Supported</h3>
+                  <p>
+                    Comprehensive support with global reach and local expertise.
+                  </p>
+                  <ul>
+                    <li>24/7 technical support</li>
+                    <li>Remote monitoring</li>
+                    <li>15+ year lifespan</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="solution-proof">
+                <div class="proof-statement">
+                  <h2>Proven Results</h2>
+                  <p>
+                    Over <strong>18,000 installations</strong> worldwide
+                    demonstrate our leadership in intelligent kitchen
+                    ventilation technology.
+                  </p>
+                </div>
+                <div class="technology-badge">
+                  <i class="fas fa-award"></i>
+                  <span>Industry Leading DCKV Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 6: Key Features & Benefits -->
+        <section class="slide" data-slide="6">
+          <div class="slide-content">
+            <h1 class="slide-title">Key Features & Benefits</h1>
+            <div class="features-showcase">
+              <div class="features-grid">
+                <div class="feature-card sensing">
+                  <div class="feature-icon"><i class="fas fa-wifi"></i></div>
+                  <h3>Dual Sensing Technology</h3>
+                  <p>
+                    Advanced temperature and optical sensors provide precise
+                    cooking activity detection for optimal ventilation control.
+                  </p>
+                  <div class="feature-benefit">Up to 97% energy savings</div>
+                </div>
+                <div class="feature-card learning">
+                  <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                  <h3>Algorithms</h3>
+                  <p>
+                    Intelligent system adapts to your kitchen's unique patterns
+                    and cooking schedules for maximum efficiency.
+                  </p>
+                  <div class="feature-benefit">Continuous optimization</div>
+                </div>
+                <div class="feature-card integration">
+                  <div class="feature-icon">
+                    <i class="fas fa-network-wired"></i>
+                  </div>
+                  <h3>BACnet IP Compatible</h3>
+                  <p>
+                    Seamless integration with existing building management
+                    systems for centralized control and monitoring.
+                  </p>
+                  <div class="feature-benefit">Easy system integration</div>
+                </div>
+                <div class="feature-card universal">
+                  <div class="feature-icon"><i class="fas fa-cogs"></i></div>
+                  <h3>Hood Agnostic</h3>
+                  <p>
+                    Works with any hood manufacturer, protecting your existing
+                    equipment investments while adding intelligence.
+                  </p>
+                  <div class="feature-benefit">Future-proof design</div>
+                </div>
+                <div class="feature-card support">
+                  <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                  <h3>24/7 Global Support</h3>
+                  <p>
+                    Round-the-clock technical support and remote diagnostics
+                    ensure maximum uptime and performance.
+                  </p>
+                  <div class="feature-benefit">Minimized downtime</div>
+                </div>
+                <div class="feature-card compliance">
+                  <div class="feature-icon">
+                    <i class="fas fa-list-check"></i>
+                  </div>
+                  <h3>UL710 Listed Device</h3>
+                  <p>Fully certified and compliant UL710, UL2017, CUL, CSA.</p>
+                  <div class="feature-benefit">Peace of mind</div>
+                </div>
+                <!-- New Cards -->
+                <div class="feature-card universal">
+                  <div class="feature-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                  </div>
+                  <h3>Performance Monitoring</h3>
+                  <p>
+                    Real-time dashboard, proactive temperature alarms, and auto
+                    on/off functions for complete visibility and control.
+                  </p>
+                  <div class="feature-benefit">Improved safety & control</div>
+                </div>
+                <div class="feature-card learning">
+                  <div class="feature-icon">
+                    <i class="fas fa-satellite-dish"></i>
+                  </div>
+                  <h3>Remote Connectivity</h3>
+                  <p>
+                    Web-enabled via Ethernet or 4G modem, with remote
+                    diagnostics, system upgrades, and portfolio management
+                    tools.
+                  </p>
+                  <div class="feature-benefit">Remote management</div>
+                </div>
+                <div class="feature-card integration">
+                  <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                  <h3>Kitchen HVAC Automation</h3>
+                  <p>
+                    Automates kitchen exhaust and make-up air fans with built-in
+                    scheduling for multiple fans and operating times.
+                  </p>
+                  <div class="feature-benefit">Streamlined operations</div>
+                </div>
+                <div class="feature-card supported">
+                  <div class="feature-icon">
+                    <i class="fas fa-volume-down"></i>
+                  </div>
+                  <h3>Reduced Hood Noise</h3>
+                  <p>
+                    Intelligent fan modulation minimizes unnecessary noise,
+                    creating a more comfortable kitchen environment.
+                  </p>
+                  <div class="feature-benefit">Better working conditions</div>
+                </div>
+                <div class="feature-card support">
+                  <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3>Global Compliance</h3>
+                  <p>
+                    Meets ASHRAE 90.1, NFPA 96, CE, ROHS, Google BOS, and DW172
+                    standards, ensuring worldwide regulatory alignment.
+                  </p>
+                  <div class="feature-benefit">Certified worldwide</div>
+                </div>
+                <div class="feature-card compliance">
+                  <div class="feature-icon"><i class="fas fa-award"></i></div>
+                  <h3>Proven Experience</h3>
+                  <p>
+                    Over 35 years of global expertise with successful
+                    installations across hospitality, commercial, and
+                    institutional kitchens.
+                  </p>
+                  <div class="feature-benefit">Trusted worldwide</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 7: System Components -->
+        <section class="slide" data-slide="7">
+          <div class="slide-content">
+            <h1 class="slide-title">System Components & Installation</h1>
+            <div class="components-layout">
+              <div class="components-list">
+                <div class="component-item controller">
+                  <div class="component-icon">
+                    <i class="fas fa-microchip"></i>
+                  </div>
+                  <div class="component-details">
+                    <h3>System Controller</h3>
+                    <p>
+                      Central processing unit with advanced self-learning
+                      algorithms and real-time decision making capabilities.
+                    </p>
+                    <div class="component-specs">
+                      <span>UL Listed</span>
+                      <span>BACnet Ready</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="component-item sensors">
+                  <div class="component-icon"><i class="fas fa-eye"></i></div>
+                  <div class="component-details">
+                    <h3>Dual Sensors</h3>
+                    <p>
+                      Temperature and optical sensors work together to detect
+                      cooking activity with unprecedented accuracy.
+                    </p>
+                    <div class="component-specs">
+                      <span>Temperature Range: -40°F to 480°F</span>
+                      <span>Optical Detection</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="component-item vfd">
+                  <div class="component-icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                  </div>
+                  <div class="component-details">
+                    <h3>Variable Frequency Drives</h3>
+                    <p>
+                      Precision motor control for exhaust and makeup air fans,
+                      enabling smooth speed modulation.
+                    </p>
+                    <div class="component-specs">
+                      <span>0-100% Speed Control</span>
+                      <span>Energy Efficient</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="component-item interface">
+                  <div class="component-icon">
+                    <i class="fas fa-tablet-alt"></i>
+                  </div>
+                  <div class="component-details">
+                    <h3>Touchpad Interface</h3>
+                    <p>
+                      User-friendly control panel for system monitoring, manual
+                      override, and configuration settings.
+                    </p>
+                    <div class="component-specs">
+                      <span>Intuitive Design</span>
+                      <span>Multi-language Support</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="installation-benefits">
+                <h2>Professional Installation Advantages</h2>
+                <div class="benefits-list">
+                  <div class="benefit-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Minimal kitchen downtime during installation</span>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-tools"></i>
+                    <span>Complete system commissioning and testing</span>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Comprehensive staff training included</span>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-satellite-dish"></i>
+                    <span>Remote monitoring setup and configuration</span>
+                  </div>
+                  <div class="benefit-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Full warranty and ongoing support</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 8: How It Works -->
+        <section class="slide" data-slide="8">
+          <div class="slide-content">
+            <h1 class="slide-title">How It Works - Sequence of Operation</h1>
+            <div class="operation-sequence">
+              <div class="sequence-flow">
+                <div class="flow-step">
+                  <div class="step-indicator">
+                    <div class="step-number">1</div>
+                  </div>
+                  <div class="step-content">
+                    <h3>System Activation</h3>
+                    <p>
+                      Kitchen staff activates energy savings mode through the
+                      touchpad interface or BMS integration.
+                    </p>
+                    <div class="step-detail">
+                      Fans automatically start at minimum speed
+                    </div>
+                  </div>
+                </div>
+                <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-step">
+                  <div class="step-indicator">
+                    <div class="step-number">2</div>
+                  </div>
+                  <div class="step-content">
+                    <h3>Continuous Monitoring</h3>
+                    <p>
+                      Dual sensors continuously monitor temperature changes and
+                      optical conditions above cooking surfaces.
+                    </p>
+                    <div class="step-detail">
+                      Real-time data processing every second
+                    </div>
+                  </div>
+                </div>
+                <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-step">
+                  <div class="step-indicator">
+                    <div class="step-number">3</div>
+                  </div>
+                  <div class="step-content">
+                    <h3>Intelligent Analysis</h3>
+                    <p>
+                      Advanced algorithms analyze sensor data to determine
+                      optimal ventilation requirements based on cooking
+                      activity.
+                    </p>
+                    <div class="step-detail">
+                      Self-learning system improves over time
+                    </div>
+                  </div>
+                </div>
+                <div class="flow-arrow"><i class="fas fa-arrow-down"></i></div>
+                <div class="flow-step">
+                  <div class="step-indicator">
+                    <div class="step-number">4</div>
+                  </div>
+                  <div class="step-content">
+                    <h3>Automatic Adjustment</h3>
+                    <p>
+                      System automatically adjusts exhaust and makeup air fan
+                      speeds to match actual ventilation needs.
+                    </p>
+                    <div class="step-detail">
+                      Seamless speed modulation 0-100%
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="safety-features">
+                <h2>Built-in Safety Features</h2>
+                <div class="safety-grid">
+                  <div class="safety-item emergency">
+                    <i class="fas fa-fire"></i>
+                    <div>
+                      <h4>Emergency Override</h4>
+                      <p>
+                        Instant full-speed operation during fire suppression
+                        activation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="safety-item manual">
+                    <i class="fas fa-hand-paper"></i>
+                    <div>
+                      <h4>Manual Control</h4>
+                      <p>
+                        Staff can override system at any time for manual
+                        operation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="safety-item monitoring">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                      <h4>Continuous Monitoring</h4>
+                      <p>24/7 system diagnostics and performance tracking</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 9: Law of Affinity - Energy Savings Science -->
+        <section class="slide" data-slide="9">
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Law of Affinity - Energy Savings Science
+            </h1>
+            <div class="affinity-explanation">
+              <div
+                class="chart-container"
+                style="position: relative; height: 400px"
+              >
+                <canvas id="affinityChart"></canvas>
+                <!-- Energy Savings Table -->
+                <div class="affinity-table-wrapper">
+                  <table class="affinity-table">
+                    <thead>
+                      <tr>
+                        <th>Percent Speed</th>
+                        <th>Frequency (Hertz)</th>
+                        <th>Percent Savings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>100%</td>
+                        <td>50</td>
+                        <td>0%</td>
+                      </tr>
+                      <tr>
+                        <td>90%</td>
+                        <td>45</td>
+                        <td>27%</td>
+                      </tr>
+                      <tr>
+                        <td>80%</td>
+                        <td>40</td>
+                        <td>49%</td>
+                      </tr>
+                      <tr>
+                        <td>70%</td>
+                        <td>35</td>
+                        <td>66%</td>
+                      </tr>
+                      <tr>
+                        <td>60%</td>
+                        <td>30</td>
+                        <td>78%</td>
+                      </tr>
+                      <tr>
+                        <td>50%</td>
+                        <td>25</td>
+                        <td>88%</td>
+                      </tr>
+                      <tr>
+                        <td>40%</td>
+                        <td>20</td>
+                        <td>94%</td>
+                      </tr>
+                      <tr>
+                        <td>30%</td>
+                        <td>15</td>
+                        <td>97%</td>
+                      </tr>
+                      <tr>
+                        <td>20%</td>
+                        <td>10</td>
+                        <td>99%</td>
+                      </tr>
+                      <tr>
+                        <td>10%</td>
+                        <td>5</td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>0%</td>
+                        <td>0</td>
+                        <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="key-insights">
+                <div class="insight-header">
+                  <h2>The Science Behind the Savings</h2>
+                  <p class="key-principle">
+                    Energy consumption is proportional to the
+                    <strong>cube</strong> of fan speed
+                  </p>
+                </div>
+                <div class="milestone-stats">
+                  <div class="milestone critical">
+                    <div class="milestone-value">50%</div>
+                    <div class="milestone-label">Fan Speed</div>
+                    <div class="milestone-result">= 88% Energy Savings</div>
+                  </div>
+                  <div class="milestone optimal">
+                    <div class="milestone-value">30%</div>
+                    <div class="milestone-label">Fan Speed</div>
+                    <div class="milestone-result">= 97% Energy Savings</div>
+                  </div>
+                </div>
+                <div class="focus-message">
+                  <div class="focus-icon"><i class="fas fa-bullseye"></i></div>
+                  <div class="focus-text">
+                    <strong>Focus on AVERAGE fan speed</strong> during 24-hour
+                    operating cycle for maximum impact
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 10: Real Data - Real Savings -->
+        <section class="slide" data-slide="10">
+          <div class="slide-content">
+            <h1 class="slide-title">Real Data - Real Savings</h1>
+            <div class="performance-data-layout">
+              <div class="data-source">
+                <div class="source-badge">
+                  <i class="fas fa-database"></i>
+                  <span>Data from 80,000+ integrated hoods globally</span>
+                </div>
+              </div>
+              <div class="facility-performance-chart">
+                <div
+                  class="chart-container"
+                  style="position: relative; height: 450px"
+                >
+                  <canvas id="facilityChart"></canvas>
+                </div>
+              </div>
+              <div class="data-insights">
+                <div class="insight-card hotels">
+                  <div class="facility-type">Hotels & Lodging</div>
+                  <div class="performance-metric">
+                    <span class="metric-value">66%</span>
+                    <span class="metric-label">Avg Speed</span>
+                  </div>
+                  <div class="savings-result">71% Savings</div>
+                </div>
+                <div class="insight-card casinos">
+                  <div class="facility-type">Casinos</div>
+                  <div class="performance-metric">
+                    <span class="metric-value">54%</span>
+                    <span class="metric-label">Avg Speed</span>
+                  </div>
+                  <div class="savings-result">84% Savings</div>
+                </div>
+                <div class="insight-card restaurants">
+                  <div class="facility-type">Dinner House</div>
+                  <div class="performance-metric">
+                    <span class="metric-value">72%</span>
+                    <span class="metric-label">Avg Speed</span>
+                  </div>
+                  <div class="savings-result">63% Savings</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 11: Interactive Energy Calculator -->
+        <section class="slide" data-slide="11">
+          <div class="slide-content">
+            <h1 class="slide-title">Interactive Energy Calculator</h1>
+            <div class="calculator-layout">
+              <div class="calculator-inputs">
+                <h2>Calculate Your Savings</h2>
+                <div class="input-sections">
+                  <div class="input-section facility">
+                    <label for="facilityType">Facility Type</label>
+                    <select id="facilityType" class="form-control">
+                      <option value="hotel">Hotels & Lodging</option>
+                      <option value="casino">Casinos</option>
+                      <option value="restaurant">Restaurants</option>
+                      <option value="convention">Convention Centers</option>
+                      <option value="healthcare">Healthcare</option>
+                      <option value="university">Universities</option>
+                    </select>
+                  </div>
+                  <div class="input-section">
+                    <label for="hoodCount">Number of Hoods</label>
+                    <input
+                      type="number"
+                      id="hoodCount"
+                      class="form-control"
+                      value="8"
+                      min="1"
+                      max="50"
+                    />
+                  </div>
+                  <div class="input-section">
+                    <label for="motorPower">Motor Power (HP per hood)</label>
+                    <input
+                      type="number"
+                      id="motorPower"
+                      class="form-control"
+                      value="5"
+                      min="1"
+                      max="20"
+                      step="0.5"
+                    />
+                  </div>
+                  <div class="input-section">
+                    <label for="operatingHours">Operating Hours/Day</label>
+                    <input
+                      type="number"
+                      id="operatingHours"
+                      class="form-control"
+                      value="16"
+                      min="8"
+                      max="24"
+                    />
+                  </div>
+                  <div class="input-section">
+                    <label for="energyCost">Energy Cost ($/kWh)</label>
+                    <input
+                      type="number"
+                      id="energyCost"
+                      class="form-control"
+                      value="0.12"
+                      step="0.01"
+                      min="0.05"
+                      max="0.50"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="btn btn--primary calculate-btn"
+                  onclick="calculateROI()"
+                >
+                  <i class="fas fa-calculator"></i>
+                  Calculate Savings
+                </button>
+              </div>
+              <div class="calculator-results">
+                <h2>Your Projected Results</h2>
+                <div class="results-grid">
+                  <div class="result-card savings">
+                    <div class="result-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="result-label">Annual Savings</div>
+                    <div class="result-value" id="annualSavings">$75,000</div>
+                  </div>
+                  <div class="result-card payback">
+                    <div class="result-icon"><i class="fas fa-clock"></i></div>
+                    <div class="result-label">Payback Period</div>
+                    <div class="result-value" id="paybackPeriod">1.8 years</div>
+                  </div>
+                  <div class="result-card co2">
+                    <div class="result-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="result-label">CO₂ Reduction</div>
+                    <div class="result-value" id="co2Reduction">
+                      630,000 lbs/year
+                    </div>
+                  </div>
+                  <div class="result-card roi">
+                    <div class="result-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="result-label">10-Year ROI</div>
+                    <div class="result-value" id="tenYearROI">456%</div>
+                  </div>
+                </div>
+                <div class="calculator-note">
+                  <p>
+                    <i class="fas fa-info-circle"></i> Calculations based on
+                    actual performance data from similar facilities
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 12: Case Study - Fairmont The Palm -->
+        <section class="slide" data-slide="12">
+          <div class="slide-content">
+            <h1 class="slide-title">Case Study: Fairmont The Palm</h1>
+            <div class="case-study-layout luxury-hotel">
+              <div class="case-study-header">
+                <div class="property-info">
+                  <h2>Fairmont The Palm</h2>
+                  <p class="property-type">Luxury Beach Resort • Dubai, UAE</p>
+                  <p class="property-description">
+                    Premier luxury resort with multiple F&B outlets and
+                    extensive kitchen operations serving discerning guests.
+                  </p>
+                </div>
+                <div class="case-study-image">
+                  <div class="image-placeholder luxury">
+                    <img
+                      src="fairmount the palm.webp"
+                      alt="Fairmont The Palm Resort"
+                      class="property-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-metrics">
+                <div class="metrics-grid">
+                  <div class="metric-card primary-savings">
+                    <div class="metric-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-content">
+                      <div class="metric-value">AED 375,632</div>
+                      <div class="metric-label">Annual Savings</div>
+                    </div>
+                  </div>
+                  <div class="metric-card payback-period">
+                    <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                    <div class="metric-content">
+                      <div class="metric-value">1.2 years</div>
+                      <div class="metric-label">Payback Period</div>
+                    </div>
+                  </div>
+                  <div class="metric-card expense-reduction">
+                    <div class="metric-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="metric-content">
+                      <div class="metric-value">53%</div>
+                      <div class="metric-label">OpEx Reduction</div>
+                    </div>
+                  </div>
+                  <div class="metric-card environmental">
+                    <div class="metric-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="metric-content">
+                      <div class="metric-value">425,559 Kg/Year</div>
+                      <div class="metric-label">CO₂ Reduced</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="case-study-highlights">
+                  <div class="highlight-item">
+                    <i class="fas fa-star"></i>
+                    <span
+                      >Exceptional ROI with premium guest experience
+                      maintained</span
+                    >
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-award"></i>
+                    <span>Sustainability goals achieved ahead of schedule</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Zero operational disruption during installation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 13: Case Study - Four Seasons Resort JBR Dubai -->
+        <section class="slide" data-slide="13">
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Case Study: Four Seasons Resort JBR Dubai
+            </h1>
+            <div class="case-study-layout beachfront-resort">
+              <div class="case-study-header">
+                <div class="property-info">
+                  <h2>Four Seasons Resort JBR Dubai</h2>
+                  <p class="property-type">
+                    Luxury Beachfront Resort • Dubai, UAE
+                  </p>
+                  <p class="property-description">
+                    Prestigious beachfront resort with extensive kitchen
+                    operations serving world-class dining experiences.
+                  </p>
+                </div>
+                <div class="case-study-image">
+                  <div class="image-placeholder beachfront">
+                    <img
+                      src="four searsons resort jbr.webp"
+                      alt="Four Seasons Resort JBR"
+                      class="property-image"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="case-study-metrics">
+                <div class="metrics-grid">
+                  <div class="metric-card primary-savings">
+                    <div class="metric-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-content">
+                      <div class="metric-value">AED 453,191</div>
+                      <div class="metric-label">Annual Savings</div>
+                    </div>
+                  </div>
+                  <div class="metric-card payback-period">
+                    <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                    <div class="metric-content">
+                      <div class="metric-value">1.0 years</div>
+                      <div class="metric-label">Payback Period</div>
+                    </div>
+                  </div>
+                  <div class="metric-card expense-reduction">
+                    <div class="metric-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="metric-content">
+                      <div class="metric-value">50%</div>
+                      <div class="metric-label">OpEx Reduction</div>
+                    </div>
+                  </div>
+                  <div class="metric-card environmental">
+                    <div class="metric-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="metric-content">
+                      <div class="metric-value">475,164 kg/Year</div>
+                      <div class="metric-label">CO₂ Reduced</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="case-study-highlights">
+                  <div class="highlight-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Fastest payback period in resort portfolio</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-users"></i>
+                    <span>Enhanced kitchen staff comfort and productivity</span>
+                  </div>
+                  <div class="highlight-item">
+                    <i class="fas fa-leaf"></i>
+                    <span>Major contributor to sustainability initiatives</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 14: Case Study - Jumeirah Properties Portfolio -->
+        <section class="slide" data-slide="14">
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Case Study: Jumeirah Properties Portfolio
+            </h1>
+            <div class="portfolio-case-study">
+              <div class="portfolio-overview">
+                <h2>Multi-Property Success Story</h2>
+                <p class="portfolio-description">
+                  Comprehensive DCKV implementation across Jumeirah's premium
+                  Dubai properties demonstrating scalable energy savings.
+                </p>
+                <!-- Images Row -->
+                <div class="properties-images">
+                  <div class="property-image-card">
+                    <img src="Jumeirah Al Qasar.webp" alt="Jumeirah Al Qasr" />
+                    <span class="property-caption">Jumeirah Al Qasr</span>
+                  </div>
+                  <div class="property-image-card">
+                    <img
+                      src="Jumeirah Mina Al Salm.webp"
+                      alt="Jumeirah Mina Al Salam"
+                    />
+                    <span class="property-caption">Jumeirah Mina Al Salam</span>
+                  </div>
+                </div>
+              </div>
+              <div class="properties-grid">
+                <div class="property-card al-qasr">
+                  <div class="property-header">
+                    <h3>Jumeirah Al Qasr</h3>
+                    <span class="property-tag">11 Kitchen Installations</span>
+                  </div>
+                  <div class="property-metrics">
+                    <div class="property-metric">
+                      <span class="metric-value">AED 80,555</span>
+                      <span class="metric-label">Annual Savings</span>
+                    </div>
+                    <div class="property-metric">
+                      <span class="metric-value">1.6 years</span>
+                      <span class="metric-label">Payback</span>
+                    </div>
+                    <div class="property-metric">
+                      <span class="metric-value">25%</span>
+                      <span class="metric-label">OpEx Reduction</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-card mina-al-salam">
+                  <div class="property-header">
+                    <h3>Jumeirah Mina Al Salam</h3>
+                    <span class="property-tag">Boutique Luxury Resort</span>
+                  </div>
+                  <div class="property-metrics">
+                    <div class="property-metric">
+                      <span class="metric-value">AED 442,198</span>
+                      <span class="metric-label">Annual Savings</span>
+                    </div>
+                    <div class="property-metric">
+                      <span class="metric-value">1.7 years</span>
+                      <span class="metric-label">Payback</span>
+                    </div>
+                    <div class="property-metric">
+                      <span class="metric-value">64%</span>
+                      <span class="metric-label">OpEx Reduction</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-testimonial">
+                <div class="testimonial-content">
+                  <div class="quote-icon">
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                  <blockquote>
+                    "Here at Jumeirah Hotels, Melink Intelli-Hood has
+                    revolutionized our kitchen operations, delivering
+                    unparalleled energy savings and performance. Our decision to
+                    partner with Melink and Klima Global reflects Jumeirah's
+                    dedication to environmental stewardship and sustainability."
+                  </blockquote>
+                  <div class="testimonial-author">
+                    <div class="author-info">
+                      <strong>Darren Warner</strong>
+                      <span>Senior Director of Engineering</span>
+                      <span>Madinat Jumeirah</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-summary">
+                <div class="summary-stats">
+                  <div class="summary-stat">
+                    <div class="stat-value">AED 552,753</div>
+                    <div class="stat-label">Combined Annual Savings</div>
+                  </div>
+                  <div class="summary-stat">
+                    <div class="stat-value">1.38M kg/Year</div>
+                    <div class="stat-label">Combined CO₂ Reduction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 15: Melink Portal - Monitoring & Analytics -->
+        <section class="slide" data-slide="15">
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Melink Portal - Advanced Monitoring & Analytics
+            </h1>
+            <div class="portal-showcase">
+              <div class="portal-header">
+                <div class="portal-intro">
+                  <h2>24/7 Remote Monitoring & Optimization</h2>
+                  <p>
+                    The Melink Portal provides comprehensive system monitoring,
+                    performance analytics, and predictive maintenance
+                    capabilities to maximize your investment value.
+                  </p>
+                </div>
+                <div class="portal-image">
+                  <img
+                    src="melink_portal.webp"
+                    alt="Melink Portal Dashboard"
+                    class="portal-screenshot"
+                  />
+                </div>
+              </div>
+              <div class="portal-features">
+                <div class="feature-section monitoring">
+                  <h3>
+                    <i class="fas fa-chart-line"></i> Real-Time Monitoring
+                  </h3>
+                  <div class="feature-grid">
+                    <div class="feature-item">
+                      <i class="fas fa-tachometer-alt"></i>
+                      <span
+                        >Live fan speed and energy consumption tracking</span
+                      >
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-thermometer-half"></i>
+                      <span>Temperature and sensor data visualization</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-bell"></i>
+                      <span>Instant alerts and notifications</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-section analytics">
+                  <h3>
+                    <i class="fas fa-analytics"></i> Performance Analytics
+                  </h3>
+                  <div class="feature-grid">
+                    <div class="feature-item">
+                      <i class="fas fa-chart-bar"></i>
+                      <span>Energy savings reports and trends</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-calendar-alt"></i>
+                      <span>Historical performance comparisons</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-download"></i>
+                      <span>Automated report generation</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="feature-section management">
+                  <h3><i class="fas fa-cogs"></i> System Management</h3>
+                  <div class="feature-grid">
+                    <div class="feature-item">
+                      <i class="fas fa-wrench"></i>
+                      <span>Remote system diagnostics</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-mobile-alt"></i>
+                      <span>Web portal access</span>
+                    </div>
+                    <div class="feature-item">
+                      <i class="fas fa-users"></i>
+                      <span>Multi-site management capabilities</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="portal-benefits">
+                <div class="benefit-callout">
+                  <div class="benefit-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h4>Proactive Maintenance</h4>
+                    <p>
+                      Predictive alerts prevent issues before they impact
+                      operations
+                    </p>
+                  </div>
+                </div>
+                <div class="benefit-callout">
+                  <div class="benefit-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h4>Continuous Optimization</h4>
+                    <p>
+                      Machine learning algorithms improve performance over time
+                    </p>
+                  </div>
+                </div>
+                <div class="benefit-callout">
+                  <div class="benefit-icon">
+                    <i class="fas fa-file-alt"></i>
+                  </div>
+                  <div class="benefit-text">
+                    <h4>Compliance Reporting</h4>
+                    <p>
+                      Automated reports for sustainability and regulatory
+                      requirements
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Slide 16: Next Steps & Contact -->
+        <section class="slide" data-slide="16">
+          <div class="slide-content">
+            <h1 class="slide-title">
+              Ready to Transform Your Kitchen Operations?
+            </h1>
+            <div class="next-steps-layout">
+              <div class="process-timeline">
+                <h2>Your Journey to Energy Excellence</h2>
+                <div class="timeline-steps">
+                  <div class="timeline-step assessment">
+                    <div class="step-icon"><i class="fas fa-search"></i></div>
+                    <div class="step-content">
+                      <h3>1. Free Energy Assessment</h3>
+                      <p>
+                        Comprehensive kitchen audit and energy analysis with
+                        customized savings projections
+                      </p>
+                      <div class="step-duration">Timeline: 1-2 days</div>
+                    </div>
+                  </div>
+                  <div class="timeline-connector"></div>
+                  <div class="timeline-step proposal">
+                    <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                    <div class="step-content">
+                      <h3>2. Detailed Proposal</h3>
+                      <p>
+                        Custom solution design with precise ROI calculations and
+                        implementation plan
+                      </p>
+                      <div class="step-duration">Timeline: 3-5 days</div>
+                    </div>
+                  </div>
+                  <div class="timeline-connector"></div>
+                  <div class="timeline-step installation">
+                    <div class="step-icon"><i class="fas fa-tools"></i></div>
+                    <div class="step-content">
+                      <h3>3. Professional Installation</h3>
+                      <p>
+                        Expert installation, commissioning, training, and portal
+                        setup
+                      </p>
+                      <div class="step-duration">Timeline: 2-5 days</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-section">
+                <div class="contact-card-final">
+                  <div class="contact-header">
+                    <img src="klima_logo.png" class="contact-logo" />
+                    <h3>Start Your Energy Transformation Today</h3>
+                  </div>
+                  <div class="contact-info-final">
+                    <div class="contact-person">
+                      <div class="person-info">
+                        <strong>Kamlesh Lodha</strong>
+                        <span>Managing Director</span>
+                      </div>
+                    </div>
+                    <div class="contact-methods">
+                      <div class="contact-method">
+                        <i class="fas fa-phone"></i>
+                        <span>+971 52 277 4852</span>
+                      </div>
+                      <div class="contact-method">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kamlesh@klimaglobal.com</span>
+                      </div>
+                      <div class="contact-method">
+                        <i class="fas fa-globe"></i>
+                        <span>www.klimaglobal.com</span>
+                      </div>
+                      <div class="contact-method">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>E32, Al Qusais 1, Dubai, UAE</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="call-to-action">
+                    <div class="cta-message">
+                      <h4>Schedule Your Free Assessment</h4>
+                      <p>
+                        Join the hospitality leaders already saving millions
+                        with intelligent kitchen ventilation
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="final-message">
+                  <div class="thank-you">
+                    <h2>Thank You</h2>
+                    <p>for your time and consideration</p>
+                  </div>
+                  <div class="company-signature">
+                    <strong>Klima Global General Trading LLC</strong>
+                    <span>Your Partner in Energy Excellence</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Progress Indicator -->
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
