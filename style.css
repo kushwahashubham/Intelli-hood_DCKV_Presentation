@@ -923,7 +923,11 @@ body {
   visibility: hidden;
   transform: translateX(100%);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background: var(--cream);
+  background: linear-gradient(135deg, rgba(var(--color-teal-500-rgb), 0.12), rgba(var(--color-slate-900-rgb), 0.14));
+}
+
+.slide[data-slide="1"] {
+  background: transparent;
 }
 
 .slide.active {
@@ -968,16 +972,35 @@ body {
 
 /* Hero Slide Styles */
 .hero-slide {
-  background: linear-gradient(
-    135deg,
-    var(--klima-blue-dark),
-    var(--klima-teal)
-  );
+  position: relative;
+  overflow: hidden;
+  background-image: url("Hotel Kitchen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--klima-blue-dark);
   color: var(--white);
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: var(--space-3xl);
+}
+
+.hero-slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    var(--klima-blue-dark),
+    var(--klima-teal)
+  );
+  opacity: 0.5;
+}
+
+.hero-slide > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-content {
@@ -2267,6 +2290,10 @@ body {
   align-items: center;
   justify-content: center;
   background: #f8fafc; /* fallback background */
+  position: relative;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
 }
 
 .case-study-image img.property-image {
@@ -2274,6 +2301,21 @@ body {
   height: 100%;
   object-fit: cover; /* ensures image covers area like placeholder */
   border-radius: 8px;
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.55s ease;
+  will-change: transform, filter;
+}
+
+.case-study-image:hover,
+.case-study-image:focus-within {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 45px rgba(var(--color-slate-900-rgb), 0.22);
+}
+
+.case-study-image:hover img.property-image,
+.case-study-image:focus-within img.property-image {
+  transform: scale(1.05);
+  filter: saturate(1.08) brightness(1.03);
 }
 
 .image-placeholder {
@@ -2416,6 +2458,16 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  position: relative;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.property-image-card:hover,
+.property-image-card:focus-within {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 24px 50px rgba(var(--color-slate-900-rgb), 0.18);
 }
 
 .property-image-card img {
@@ -2423,6 +2475,15 @@ body {
   height: 250px;
   object-fit: cover;
   border-bottom: 2px solid #e2e8f0;
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.55s ease;
+  will-change: transform, filter;
+}
+
+.property-image-card:hover img,
+.property-image-card:focus-within img {
+  transform: scale(1.06);
+  filter: saturate(1.08) brightness(1.03);
 }
 
 .property-caption {
@@ -2637,11 +2698,45 @@ body {
   line-height: 1.6;
 }
 
+.portal-image {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(var(--color-teal-500-rgb), 0.16),
+    rgba(var(--color-slate-500-rgb), 0.12)
+  );
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, box-shadow;
+}
+
+.portal-image:hover,
+.portal-image:focus-within {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 24px 50px rgba(var(--color-slate-900-rgb), 0.18);
+}
+
 .portal-screenshot {
   width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
+  transition: transform 0.55s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 0.55s ease, box-shadow 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, filter, box-shadow;
+}
+
+.portal-image:hover .portal-screenshot,
+.portal-image:focus-within .portal-screenshot {
+  transform: scale(1.04);
+  filter: saturate(1.05) brightness(1.02);
+  box-shadow: 0 26px 60px rgba(var(--color-slate-900-rgb), 0.22);
 }
 
 .portal-features {
@@ -3121,6 +3216,19 @@ body {
 
   .step-icon {
     align-self: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .case-study-image,
+  .case-study-image img.property-image,
+  .property-image-card,
+  .property-image-card img,
+  .portal-image,
+  .portal-screenshot {
+    transition: none !important;
+    transform: none !important;
+    filter: none !important;
   }
 }
 
