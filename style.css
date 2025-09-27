@@ -1424,7 +1424,7 @@ body {
 .bar-segment.captured {
   flex: 2;
   background: var(--klima-blue-dark);
-  min-width: 200px;
+  min-width: 120px;
 }
 
 .bar-segment.available {
@@ -1970,10 +1970,17 @@ body {
 
 /* Chart Containers */
 .chart-container {
+  position: relative;
   background: var(--white);
   padding: var(--space-xl);
   border-radius: 16px;
   box-shadow: var(--shadow-md);
+  min-height: 340px;
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Affinity Explanation */
@@ -3222,7 +3229,6 @@ body {
   .operation-sequence,
   .affinity-explanation,
   .calculator-layout,
-  .case-study-header,
   .portal-header,
   .next-steps-layout {
     grid-template-columns: 1fr;
@@ -3250,38 +3256,6 @@ body {
   .properties-grid {
     grid-template-columns: 1fr;
   }
-}
-.challenge-layout,
-.solution-showcase,
-.components-layout,
-.operation-sequence,
-.affinity-explanation,
-.calculator-layout,
-.case-study-header,
-.portal-header,
-.next-steps-layout {
-  grid-template-columns: 1fr;
-  gap: var(--space-xl);
-}
-
-.company-overview {
-  grid-template-columns: 1fr;
-  text-align: center;
-}
-
-.market-visualization {
-  grid-template-columns: 1fr;
-  text-align: center;
-}
-.bar-track {
-  height: 64px;
-}
-
-.bar-legend {
-  grid-template-columns: 1fr;
-}
-.properties-grid {
-  grid-template-columns: 1fr;
 }
 
 @media (max-width: 768px) {
@@ -3330,6 +3304,11 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .case-study-header {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
   .success-metrics,
   .summary-stats {
     grid-template-columns: 1fr;
@@ -3357,7 +3336,7 @@ body {
   }
 
   .bar-segment.captured {
-    min-width: 180px;
+    min-width: 50px;
   }
 
   .bar-info .percentage {
