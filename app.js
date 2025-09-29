@@ -1,10 +1,138 @@
 class KlimaGlobalPresentation {
   constructor() {
     this.currentSlide = 1;
-    this.totalSlides = 16;
+    this.totalSlides = 22;
     this.isTransitioning = false;
     this.charts = {};
     this.chartsInitialized = false;
+    this.facilityPerformanceData = [
+      {
+        key: "corp-office-building",
+        label: "Corp & Office Building",
+        avgSpeed: 51.59,
+        savings: 86.27,
+      },
+      {
+        key: "correctional-facility",
+        label: "Correctional Facility",
+        avgSpeed: 52.04,
+        savings: 85.91,
+      },
+      {
+        key: "gov-military",
+        label: "Gov, Military",
+        avgSpeed: 45.5,
+        savings: 90.58,
+      },
+      {
+        key: "gov-other",
+        label: "Gov, Other",
+        avgSpeed: 65.83,
+        savings: 71.47,
+      },
+      {
+        key: "health-hospital",
+        label: "Health, Hospital",
+        avgSpeed: 69.49,
+        savings: 66.44,
+      },
+      {
+        key: "health-other",
+        label: "Health, Other",
+        avgSpeed: 47.22,
+        savings: 89.47,
+      },
+      {
+        key: "health-senior-living-healthcare",
+        label: "Health, Senior Living & Healthcare",
+        avgSpeed: 55.79,
+        savings: 82.64,
+      },
+      {
+        key: "casinos",
+        label: "Casinos",
+        avgSpeed: 54.24,
+        savings: 84.04,
+      },
+      {
+        key: "convention-center",
+        label: "Convention Center",
+        avgSpeed: 51.52,
+        savings: 86.32,
+      },
+      {
+        key: "country-club",
+        label: "Country Club",
+        avgSpeed: 47.47,
+        savings: 89.3,
+      },
+      {
+        key: "hotels-lodging",
+        label: "Hotels & Lodging",
+        avgSpeed: 66.14,
+        savings: 71.07,
+      },
+      {
+        key: "rec-other",
+        label: "Rec, Other",
+        avgSpeed: 48.07,
+        savings: 88.89,
+      },
+      {
+        key: "sporting-venue",
+        label: "Sporting Venue",
+        avgSpeed: 59.86,
+        savings: 78.55,
+      },
+      {
+        key: "theme-park",
+        label: "Theme Park",
+        avgSpeed: 79.54,
+        savings: 49.68,
+      },
+      {
+        key: "schools-k-12",
+        label: "Schools, K-12",
+        avgSpeed: 43.66,
+        savings: 91.68,
+      },
+      {
+        key: "schools-tech-culinary-other",
+        label: "Schools, Tech/Culinary Other",
+        avgSpeed: 45.64,
+        savings: 90.49,
+      },
+      {
+        key: "university",
+        label: "University",
+        avgSpeed: 53.87,
+        savings: 84.37,
+      },
+      {
+        key: "dinner-house",
+        label: "Dinner House",
+        avgSpeed: 72.0,
+        savings: 62.68,
+      },
+      {
+        key: "grocery",
+        label: "Grocery",
+        avgSpeed: 61.14,
+        savings: 77.15,
+      },
+      {
+        key: "quickserve",
+        label: "Quickserve",
+        avgSpeed: 65.9,
+        savings: 71.38,
+      },
+      {
+        key: "aggregate",
+        label: "Aggregate",
+        avgSpeed: 56.82,
+        savings: 81.66,
+      },
+    ];
 
     // DOM elements
     this.slides = document.querySelectorAll(".slide");
@@ -457,39 +585,13 @@ class KlimaGlobalPresentation {
 
     const ctx = canvas.getContext("2d");
 
-    const facilityData = [
-      { type: "Corp & Office Building", avgSpeed: 51.59, savings: 86.27 },
-      { type: "Correctional Facility", avgSpeed: 52.04, savings: 85.91 },
-      { type: "Gov, Military", avgSpeed: 45.5, savings: 90.58 },
-      { type: "Gov, Other", avgSpeed: 65.83, savings: 71.47 },
-      { type: "Health, Hospital", avgSpeed: 69.49, savings: 66.44 },
-      { type: "Health, Other", avgSpeed: 47.22, savings: 89.47 },
-      {
-        type: "Health, Senior Living & Healthcare",
-        avgSpeed: 55.79,
-        savings: 82.64,
-      },
-      { type: "Casinos", avgSpeed: 54.24, savings: 84.04 },
-      { type: "Convention Center", avgSpeed: 51.52, savings: 86.32 },
-      { type: "Country Club", avgSpeed: 47.47, savings: 89.3 },
-      { type: "Hotels & Lodging", avgSpeed: 66.14, savings: 71.07 },
-      { type: "Rec, Other", avgSpeed: 48.07, savings: 88.89 },
-      { type: "Sporting Venue", avgSpeed: 59.86, savings: 78.55 },
-      { type: "Theme Park", avgSpeed: 79.54, savings: 49.68 },
-      { type: "Schools, K-12", avgSpeed: 43.66, savings: 91.68 },
-      { type: "Schools, Tech/Culinary Other", avgSpeed: 45.64, savings: 90.49 },
-      { type: "University", avgSpeed: 53.87, savings: 84.37 },
-      { type: "Dinner House", avgSpeed: 72.0, savings: 62.68 },
-      { type: "Grocery", avgSpeed: 61.14, savings: 77.15 },
-      { type: "Quickserve", avgSpeed: 65.9, savings: 71.38 },
-      { type: "Aggregate", avgSpeed: 56.82, savings: 81.66 },
-    ];
+    const facilityData = this.facilityPerformanceData;
 
     try {
       this.charts.facility = new Chart(ctx, {
         type: "bar",
         data: {
-          labels: facilityData.map((d) => d.type),
+          labels: facilityData.map((d) => d.label),
           datasets: [
             {
               label: "Average Fan Speed (%)",
@@ -615,14 +717,35 @@ class KlimaGlobalPresentation {
 
   setupROICalculator() {
     // Facility type mappings
-    this.facilityTypes = {
-      hotel: { avgSpeed: 57, savings: 78, baseUsage: 18 },
-      casino: { avgSpeed: 47.22, savings: 85, baseUsage: 22 },
-      restaurant: { avgSpeed: 53.87, savings: 79, baseUsage: 20 },
-      convention: { avgSpeed: 54.24, savings: 80, baseUsage: 16 },
-      healthcare: { avgSpeed: 51.52, savings: 82, baseUsage: 24 },
-      university: { avgSpeed: 59.86, savings: 76, baseUsage: 14 },
-    };
+    const facilityOptions = this.facilityPerformanceData.filter(
+      (item) => item.key !== "aggregate"
+    );
+
+    this.facilityTypes = facilityOptions.reduce((acc, item) => {
+      acc[item.key] = {
+        avgSpeed: item.avgSpeed,
+        savings: item.savings,
+        baseUsage: 18,
+      };
+      return acc;
+    }, {});
+
+    this.defaultFacilityKey = facilityOptions[0]?.key || null;
+
+    const facilityTypeSelect = document.getElementById("facilityType");
+    if (facilityTypeSelect) {
+      facilityTypeSelect.innerHTML = "";
+      facilityOptions.forEach((item) => {
+        const option = document.createElement("option");
+        option.value = item.key;
+        option.textContent = item.label;
+        facilityTypeSelect.appendChild(option);
+      });
+
+      if (this.defaultFacilityKey) {
+        facilityTypeSelect.value = this.defaultFacilityKey;
+      }
+    }
 
     // Bind calculator input events
     const inputs = [
@@ -662,13 +785,15 @@ class KlimaGlobalPresentation {
         return;
       }
 
-      const facilityType = facilityTypeElement.value;
+      const facilityType = facilityTypeElement.value || this.defaultFacilityKey;
+      const fallbackKey =
+        this.defaultFacilityKey || Object.keys(this.facilityTypes)[0];
+
       const hoodCount = parseFloat(hoodCountElement.value) || 8;
       const motorPower = parseFloat(motorPowerElement.value) || 5;
       const operatingHours = parseFloat(operatingHoursElement.value) || 16;
       const energyCost = parseFloat(energyCostElement.value) || 0.12;
 
-      // Validation
       if (
         hoodCount <= 0 ||
         motorPower <= 0 ||
@@ -681,7 +806,12 @@ class KlimaGlobalPresentation {
 
       // Get facility-specific data
       const facilityData =
-        this.facilityTypes[facilityType] || this.facilityTypes.hotel;
+        this.facilityTypes[facilityType] || this.facilityTypes[fallbackKey];
+
+      if (!facilityData) {
+        console.warn("No facility data available for calculator");
+        return;
+      }
 
       // Calculate energy consumption
       // Motor power in HP, convert to kW (1 HP = 0.746 kW)
@@ -706,8 +836,8 @@ class KlimaGlobalPresentation {
       // Payback period
       const paybackYears = systemCost / annualSavings;
 
-      // CO2 reduction (0.85 lbs CO2 per kWh saved - US average)
-      const co2ReductionLbs = energySavedKWh * 0.85;
+      // CO2 reduction (0.385 kg CO2 per kWh saved (global average))
+      const co2ReductionKg = energySavedKWh * 0.385;
 
       // 10-year ROI
       const tenYearSavings = annualSavings * 10;
@@ -717,7 +847,7 @@ class KlimaGlobalPresentation {
       this.updateCalculatorResults({
         annualSavings: annualSavings,
         paybackPeriod: paybackYears,
-        co2Reduction: co2ReductionLbs,
+        co2Reduction: co2ReductionKg,
         tenYearROI: tenYearROI,
       });
 
@@ -729,7 +859,7 @@ class KlimaGlobalPresentation {
         energyCost,
         annualSavings,
         paybackYears,
-        co2ReductionLbs,
+        co2ReductionKg,
         tenYearROI,
       });
     } catch (error) {
@@ -749,7 +879,7 @@ class KlimaGlobalPresentation {
       },
       {
         id: "co2Reduction",
-        value: `${Math.round(results.co2Reduction).toLocaleString()} lbs/year`,
+        value: `${Math.round(results.co2Reduction).toLocaleString()} kg/year`,
       },
       {
         id: "tenYearROI",

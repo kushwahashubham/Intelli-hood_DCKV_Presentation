@@ -1,9 +1,11 @@
-Hotel/Property,Annual Energy Savings (USD),CO2 Reduction (lbs/year),Payback Period (Years),Operating Expense Reduction %
-Fairmont The Palm,112724.0,1121232,1.1,63
-Four Seasons Resort JBR,123359.0,1047557,1.0,50
-W Hotel Abu Dhabi,76528.0,1405742,1.7,50
-Jumeirah Al Qasr (11 Kitchens),175790.608,1806597,1.7,64
-Jumeirah Mina Al Salam,120277.85600000001,1235325,1.7,64
-Anantara Mangroves,35286.288,810809,1.9,56
-Crown Plaza Yas Island,44381.696,1019802,1.9,56
-Radisson Blu Yas Island,39099.184,898420,1.8,55
+Hotel/Property,Annual Energy Savings (AED/year),CO2 Reduction (Kg/year),Payback Period (Years),Operating Expense Reduction %
+Fairmont The Palm,375632,425959,1.2,53
+Four Seasons Resort JBR,453191,475164,1.0,50
+W Hotel Abu Dhabi,281149.0,637634,1.7,50
+Jumeirah Al Qasr (11 Kitchens),80555,1.6,25
+Jumeirah Mina Al Salam,442198,560334,1.7,64
+Anantara Mangroves,129729,367777,1.9,56
+Crown Plaza Yas Island,163168,462575,1.9,56
+Radisson Blu Yas Island,143747,407516,1.8,55
+Rotana Hotel Abu Dhabi,160356,454603,1.7,44
+Jumrirah Beach Hotel,518040,540150,1.6,38.3
